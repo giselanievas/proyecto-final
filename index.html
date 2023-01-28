@@ -5,33 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/logo.png">
     <title>Proyecto Final</title>
     
 </head>
 <body>
     <nav>
-       <h1>Aca va el logo</h1> 
+        <a href="./index.html">
+            <svg>
+                <rect x="45" y="5" width="70" height="45" rx="10"  fill="#F0E9D2"></rect>
+                <rect x="50" y="15" width="60" height="25" rx="5" fill="#495579"></rect>
+                <polygon points="60 50 ,100 50,120 67,35 67" fill="#F0E9D2" ></polygon>
+                <polygon points="62 53 ,97 53,109 63,48 63" fill="#495579" ></polygon>
+            </svg>
+        </a>    
         <ul class="menu">
-            <li>Historia</li>
-            <li>Juguemos</li>
+            <a href="./historia.html"><li>HISTORIA</li></a>
+            <a href="./juego.html"><li>JUGUEMOS</li></a>
         </ul>
     </nav>
     <header class="principal">
-        <h1> PROGRAMACION E HISTORIA</h1>
+        <p> <strong>PROGRAMACION E HISTORIA</strong></p>
     </header>
 
 
     <section class="grid-contenido">
   
-        <h1>CONTENIDO</h1>
+        <P><strong>CONTENIDO</strong></P>
         <div class="cards-opciones">
             <div class="card-contenido">
                 <div class="img-historia">
-
+                    
+                </div>
+                <div>
+                    <p>Conozcamos Un poco sobre la historia de la<br>
+                         programacion</p>
                 </div>
                 <div class="boton-cards">
                     <ul>
-                        <li>Ir a Historia</li>
+                       <a href="./historia.html"><li><strong>Ir a Historia</strong></li></a> 
                     </ul>
                 </div>
             </div>
@@ -39,11 +51,18 @@
                 <div class="img-juego">
 
                 </div>
-                <div class="boton-cards">
-                <ul>
-                    <li>Ir a Juego</li>
-                </ul>
+                <div>
+                    <p>Juguemos un poco sobre la computacion</p>
                 </div>
+           
+                 <div class="boton-cards">
+                        <ul>
+                           <a href="./juego.html"> <li><strong>Ir a Juego</strong></li></a>
+                        </ul>
+                 </div>
+
+           
+               
               
             </div>
           
@@ -54,7 +73,6 @@
     </section>
 
 
-    <script src="./script.js"></script>
     <footer>
     <div class="grid-footer">
         <div class="pie">
@@ -64,5 +82,7 @@
         <div class="autor-pie">Sitio con fines educativos - Creado por M.Victoria Lopez</div>
     </div>
     </footer>
+
+ <script src="./script.js"></script>    
 </body>
 </html>

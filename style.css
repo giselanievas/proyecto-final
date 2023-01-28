@@ -1,6 +1,9 @@
 :root{
+    --colorBeige:#E6DDC4;
     --colorGris: #E6DDC4;
     --colorTipografia:beige;
+    --colorVerde:#678983;    
+    --colorGrisOscuro: #678983;
     --distancia:10px;
 }
 
@@ -21,7 +24,7 @@ nav{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    margin: 20px;
+    margin: 5px;
 }
 
 nav ul{
@@ -40,11 +43,22 @@ nav ul{
     cursor: pointer;
     background-color: var(--colorGris);
     border-radius: var(--distancia);
-    width: 110px;
+    width: 60PX;
     display: flex;
     justify-content: center;
+    color: black;
+
 }
 
+.menu li:hover{
+    border-bottom: 5px solid var(--colorVerde);
+    border-right: 5px solid var(--colorVerde);
+
+}
+
+.menu a{
+    text-decoration: none;
+}
 
 .principal{
     background-image: url(./img/principal.jpg);
@@ -54,11 +68,19 @@ nav ul{
     text-align: center;
     justify-content: center;
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-attachment: fixed;
     background-size: cover;
     color: white;
+    font-size: 60px;
+    text-shadow: 8px 2px 3px black;
     
+    
+}
+
+svg{
+    margin: 10px;
+    transition: fill 250ms;
     
 }
 
@@ -69,26 +91,32 @@ nav ul{
     display: grid;
     text-align: center;
     justify-content: center;
-    color: #678983;
+    color: var(--colorVerde);
  
    
+}
+
+
+.grid-contenido p{
+    font-size: 50px;
 }
 
 .cards-opciones{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 200px;
-    padding: 100px;
+    padding: 10px;
+
  
 }
 
 .card-contenido{
-   
-    justify-content: center;
-    text-align: center;
+ 
     background-color: aliceblue;
     border:  5px solid;
-    border-color: #678983;
+    border-color: var(--colorVerde);
+    background-color: var(--colorBeige);
+    
 
 
     
@@ -100,7 +128,7 @@ nav ul{
     background-size: cover;
     height: 250px;
     width: 350px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     
 
 }
@@ -113,21 +141,46 @@ nav ul{
     margin-bottom: 100px;
     
 }
+.card-contenido p{
+    font-size: 15px;
+    color: black;
+    padding: 20px;
+
+    
+
+
+}
 
 .boton-cards{
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
     background-color:rgb(24, 28, 48) ;
     border-radius: var(--distancia);
-    width: 110px;
+    width: 80px;
     margin-bottom: 20px;
-    justify-content: center;
-
    
+   
+    border-bottom: 5px solid var(--colorVerde);
+    border-right: 5px solid var(--colorVerde);
+    
+    }
+  
+
+
+.boton-cards:hover{
+   opacity: 0.5;
+    
 }
 .boton-cards ul{
-    color: aliceblue;
-    list-style: none;
+     list-style: none;
+   
+ 
+}
+
+.boton-cards a{
+    color: white;
+    text-decoration: none;
+    justify-content: center;
 
 }
 
@@ -164,3 +217,119 @@ footer{
     text-align: right;
     justify-content: right;
 }
+
+
+
+
+.historia{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 50px;
+    margin: 30px;
+
+    
+    
+}
+.historia-ultimo{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 50px;
+    margin: 30px;
+
+}
+
+.historia-lectura{
+    color: white;
+    font-size: 18px;
+    color: var(--colorBeige);
+    
+}
+
+.titulo-historia{
+    color: var(--colorVerde);
+    font-size: 40px;
+    margin: 40px;
+    text-shadow: 8px 2px 3px black ;
+    
+}
+
+.video{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.video-historia{
+    border: 10px solid black;
+    display: grid;
+    justify-content: center;
+    width: 1000px;
+    background-color:#1d1d1d
+
+
+}
+video{
+    width: 1000px;
+}
+
+.contenedor-video{
+    display: grid;
+    justify-content: center;
+    color: #678983;
+}
+
+#duracion{
+    justify-content: right;
+}
+
+
+
+/*Estilos de juego*/
+.contenedor-juego{
+    display: grid;
+    justify-content: center;
+}
+.titulo-juego{
+    display: flex;
+    justify-content: center;
+    color: var(--colorVerde);
+    font-size: 40px;
+    margin: 40px;
+    text-shadow: 8px 2px 3px black ;
+}
+
+.arrastre{
+    border: 10px solid black;
+    background-color: var(--colorGrisOscuro) ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 300px;
+}
+.arrastre:hover{
+    background-color: black ;
+    cursor: pointer;
+}
+
+.arrastrar{
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+
+.arrastre img{
+    height: 500px;
+    width: 300px;
+
+
+}
+.btn-reiniciar{
+       
+    justify-content: center;
+    padding: 10px;
+
+    }
+/*FIN ESTILOS DE JUEGO*/
